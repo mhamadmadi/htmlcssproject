@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Header Section */
+header{
+    background-color: #333;
+    padding: 20px;
+}
+header h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a.home{
+    color: orange;
+}
+nav ul li a:hover{
+    color: orange;
+}
+/*End Header Section */
+
+/* About Section */
+.about-section{
+    padding: 40px;
+}
+.about-title{
+    font-size: 24px;
+    padding: 30px 0;
+}
+.about-text{
+    margin-bottom: 10px;
+}
+/* End About Section */
+
+/* Portfolio Section */
+.portfolio-section
+.portfolio-title{
+    padding: 40px;
+    font-size: 24px;
+}
+.portfolio-cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 30px;
+}
+/* Item 1 */
+.item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.item img{
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.item h2{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 20px;
+}
+.item p{
+    text-align: center;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.item button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* End Portfolio Section */
+
+/* Contact Section */
+.contact-section{
+    padding: 40px;
+}
+.contact-title{
+    font-size: 24px;
+    padding: 30px 0;
+}
+.contact-label{
+    display: block;
+    margin-bottom: 5px 0;
+    font-weight: bold;
+}
+.contact-input, .contact-textarea{
+    width: 100%;
+    max-width: 500px;
+    resize: none;
+    padding: 4px;
+}
+.contact-submit{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+/* End Contact Section */
+
+/* Footer Section */
+.footer{
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+/* End Footer Section */
+
+
+@media screen and (max-width: 900px) {
+    .portfolio-cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
